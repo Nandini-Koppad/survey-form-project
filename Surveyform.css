@@ -1,0 +1,195 @@
+/* ===== GLOBAL STYLE ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+    background: linear-gradient(135deg, #f4f7ff, #e8f0ff);
+
+    margin: 0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    text-rendering: optimizeLegibility;
+}
+
+/* ===== TEXT SELECTION ===== */
+::selection {
+    background: #0d47a1;
+    color: white;
+}
+
+/* ===== FADE IN ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== FORM CONTAINER ===== */
+#survey-form {
+    background: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 6px solid #0d47a1;
+    box-shadow: 0 10px 25px rgba(13, 71, 161, 0.15);
+
+    animation: fadeIn 0.6s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+/* hover effect */
+#survey-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(13, 71, 161, 0.2);
+}
+
+/* ===== TITLE ===== */
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* ===== DESCRIPTION ===== */
+#description {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* ===== FORM GROUP ===== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* ===== LABELS ===== */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+/* ===== INPUT FIELDS ===== */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c5d5ff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+
+    transition: all 0.25s ease-in-out;
+}
+
+/* ===== FOCUS EFFECT ===== */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0d47a1;
+    outline: none;
+    box-shadow: 0 0 6px rgba(13, 71, 161, 0.3);
+}
+
+/* ===== PLACEHOLDER ===== */
+input::placeholder,
+textarea::placeholder {
+    color: #8aa3d1;
+}
+
+/* ===== RADIO & CHECKBOX ===== */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    accent-color: #0d47a1;
+}
+
+/* ===== FIELDSET ===== */
+fieldset {
+    border: 1px solid #c5d5ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+/* ===== TEXT ===== */
+p {
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.25s ease-in-out;
+}
+
+/* Hover Effect */
+button:hover {
+    background: #1565c0;
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(13, 71, 161, 0.35);
+}
+
+/* Click Effect */
+button:active {
+    transform: scale(0.98);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #survey-form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
+
